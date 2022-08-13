@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../index.ts"],
-  "sourcesContent": ["import * as fs from \"fs\";\r\nimport * as colors from \"nanocolors\";\r\n\r\nexport default function spark() {}\r\n"],
-  "mappings": "aAGA,wBAAwBA,GAAQ,CAAC",
-  "names": ["spark"]
+  "sourcesContent": ["import * as fs from \"fs\";\r\nimport * as colors from \"nanocolors\";\r\nimport terminalLink from \"terminal-link\";\r\n\r\nexport default function spark(file: fs.PathOrFileDescriptor) {\r\n  const data = fs.readFileSync(file, \"utf-8\").split(\"\\n\");\r\n  data.map((line) => {\r\n    if (line.startsWith(\"#\")) {\r\n      console.log(colors.bold(line));\r\n    }\r\n    if (line.startsWith(\"##\")) {\r\n      console.log(colors.bgBlack(line));\r\n    }\r\n    if (line.startsWith(\"###\")) {\r\n      console.log(colors.underline(line));\r\n    }\r\n    if (line.includes(\"[\") && line.includes(\"]\")) {\r\n      console.log(terminalLink(line, line.split(\"(\")[1].split(\")\")[0]));\r\n    }\r\n  });\r\n}\r\n"],
+  "mappings": "aAAA,UAAYA,MAAQ,KACpB,UAAYC,MAAY,aACxB,OAAOC,MAAkB,gBAEzB,wBAAwBC,EAAMC,EAA+B,CAC9CJ,EAAG,aAAaI,EAAM,OAAO,EAAE,MAAM;AAAA,CAAI,EACjD,IAAKC,GAAS,CACbA,EAAK,WAAW,GAAG,GACrB,QAAQ,IAAIJ,EAAO,KAAKI,CAAI,CAAC,EAE3BA,EAAK,WAAW,IAAI,GACtB,QAAQ,IAAIJ,EAAO,QAAQI,CAAI,CAAC,EAE9BA,EAAK,WAAW,KAAK,GACvB,QAAQ,IAAIJ,EAAO,UAAUI,CAAI,CAAC,EAEhCA,EAAK,SAAS,GAAG,GAAKA,EAAK,SAAS,GAAG,GACzC,QAAQ,IAAIH,EAAaG,EAAMA,EAAK,MAAM,GAAG,EAAE,GAAG,MAAM,GAAG,EAAE,EAAE,CAAC,CAEpE,CAAC,CACH",
+  "names": ["fs", "colors", "terminalLink", "spark", "file", "line"]
 }
