@@ -1,6 +1,6 @@
 {
   "name": "spark",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A lightweight and speedy MD renderer for the console",
   "main": "index.js",
   "scripts": {
