@@ -19,6 +19,8 @@ export default function spark(file: fs.PathOrFileDescriptor) {
       const { label, url } = groups;
       console.log(terminalLink(label, url));
     }
+    if (groups == null) {
+    }
     if (line.match(/\*\*([A-Za-z ]*)\*\*/)) {
       console.log(colors.bold(line));
     }

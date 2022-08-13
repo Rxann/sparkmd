@@ -2,7 +2,7 @@
   "name": "sparkmd",
   "version": "0.0.1",
   "description": "A lightweight and speedy Markdown renderer for the console",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "node build.js"
   },
@@ -32,5 +32,6 @@
     "terminal-link": "^3.0.0"
   },
   "type": "module"
+  
   
 }
