@@ -7,3 +7,7 @@ const config = {
   entryPoints: ["./index.ts"],
   outdir: "./dist",
 };
+esbuild.build(config).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
