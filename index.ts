@@ -22,5 +22,11 @@ export default function spark(file: fs.PathOrFileDescriptor) {
     if (line.match(/\*\*([A-Za-z ]*)\*\*/)) {
       console.log(colors.bold(line));
     }
+    if (line.match(/\*([A-Za-z ]*)\*/)) {
+      console.log(colors.italic(line));
+    }
+    if (line.match(/\~\~([A-Za-z ]*)\~\~/)) {
+      console.log(colors.strikethrough(line));
+    }
   });
 }
