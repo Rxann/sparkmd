@@ -14,10 +14,13 @@ export default function spark(file: fs.PathOrFileDescriptor) {
     if (line.startsWith("###")) {
       console.log(colors.underline(line));
     }
-    const { groups } = line.match(/\[(?<label>.*)\]\((?<url>.*)\)/);
+    const { groups } = line.match(/\[(?<label>.*)\]\((?<url>.*)\)/)!;
     if (groups) {
       const { label, url } = groups;
       console.log(terminalLink(label, url));
+    }
+    if (line.match(/\*\*([A-Za-z ]*)\*\*/)) {
+      console.log(colors.bold(line));
     }
   });
 }
