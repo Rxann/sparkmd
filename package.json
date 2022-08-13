@@ -1,7 +1,7 @@
 {
   "name": "sparkmd",
   "version": "0.0.1",
-  "description": "A lightweight and speedy MD renderer for the console",
+  "description": "A lightweight and speedy Markdown renderer for the console",
   "main": "index.js",
   "scripts": {
     "build": "node build.js"
