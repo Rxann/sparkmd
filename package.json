@@ -4,7 +4,7 @@
   "description": "A lightweight and speedy MD renderer for the console",
   "main": "index.js",
   "scripts": {
-    "build" : "node build.js"
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "esbuild": "^0.15.2",
-    "nanocolors": "^0.2.13"
+    "nanocolors": "^0.2.13",
+    "terminal-link": "^3.0.0"
   }
 }
