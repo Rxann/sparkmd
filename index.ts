@@ -14,10 +14,10 @@ export default function spark(file: fs.PathOrFileDescriptor) {
     if (line.startsWith("###")) {
       console.log(colors.underline(line));
     }
-    // if a string includes markdown link characters, print the link part of the string in a terminal link
-    if (line.includes("[") && line.includes("]")) {
-      const link = line.split("[")[1].split("]")[0];
-      console.log(terminalLink(link, link));
+    const { groups } = line.match(/\[(?<label>.*)\]\((?<url>.*)\)/);
+    if (groups) {
+      const { label, url } = groups;
+      console.log(terminalLink(label, url));
     }
   });
 }
