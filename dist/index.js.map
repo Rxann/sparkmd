@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import * as fs from \"fs\";\r\nimport * as colors from \"nanocolors\";\r\n\r\nexport default function spark() {}\r\n"],
+  "mappings": "aAGA,wBAAwBA,GAAQ,CAAC",
+  "names": ["spark"]
+}
