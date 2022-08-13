@@ -7,28 +7,18 @@ export default function spark(file: fs.PathOrFileDescriptor) {
   data.map((line) => {
     if (line.startsWith("#")) {
       console.log(colors.bold(line));
-    }
-    if (line.startsWith("##")) {
+    } else if (line.startsWith("##")) {
       console.log(colors.bgBlack(line));
-    }
-    if (line.startsWith("###")) {
+    } else if (line.startsWith("###")) {
       console.log(colors.underline(line));
-    }
-    const { groups } = line.match(/\[(?<label>.*)\]\((?<url>.*)\)/)!;
-    if (groups) {
-      const { label, url } = groups;
-      console.log(terminalLink(label, url));
-    }
-    if (groups == null) {
-    }
-    if (line.match(/\*\*([A-Za-z ]*)\*\*/)) {
+    } else if (line.match(/\*\*([A-Za-z ]*)\*\*/)) {
       console.log(colors.bold(line));
-    }
-    if (line.match(/\*([A-Za-z ]*)\*/)) {
+    } else if (line.match(/\*([A-Za-z ]*)\*/)) {
       console.log(colors.italic(line));
-    }
-    if (line.match(/\~\~([A-Za-z ]*)\~\~/)) {
+    } else if (line.match(/\~\~([A-Za-z ]*)\~\~/)) {
       console.log(colors.strikethrough(line));
+    } else {
+      console.log(line);
     }
   });
 }
