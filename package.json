@@ -1,5 +1,5 @@
 {
-  "name": "spark",
+  "name": "sparkmd",
   "version": "0.0.1",
   "description": "A lightweight and speedy MD renderer for the console",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rxann/spark.git"
+    "url": "git+https://github.com/Rxann/sparkmd.git"
   },
   "keywords": [
     "md",
@@ -18,7 +18,7 @@
   "author": "rxan",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Rxann/spark/issues"
+    "url": "https://github.com/Rxann/sparkmd/issues"
   },
-  "homepage": "https://github.com/Rxann/spark#readme"
+  "homepage": "https://github.com/Rxann/sparkmd#readme"
 }
