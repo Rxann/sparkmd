@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import * as colors from "nanocolors";
+import * as colors from "picocolors";
 import terminalLink from "terminal-link";
 
 export default function spark(file: fs.PathOrFileDescriptor) {
