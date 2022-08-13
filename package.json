@@ -30,5 +30,7 @@
     "esbuild": "^0.15.2",
     "picocolors": "^1.0.0",
     "terminal-link": "^3.0.0"
-  }
+  },
+  "type": "module"
+  
 }
