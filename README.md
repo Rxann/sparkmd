@@ -22,3 +22,21 @@ CJS:
 const spark = require("sparkmd");
 spark("example.md");
 ```
+
+## Supported Markdown Syntax
+
+Currently supported features are:
+
+```
+Headers up to - ###
+Bold
+Italic
+Strikethrough
+Code
+```
+
+Coming soon features:
+
+```
+Links
+```
