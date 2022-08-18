@@ -1,6 +1,6 @@
 {
   "name": "sparkmd",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "description": "A lightweight and speedy Markdown renderer for the console",
   "main": "./dist/index.js",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/cjs.js",
+      "require": "./dist/cjs.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
