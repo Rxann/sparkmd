@@ -4,7 +4,8 @@
   "description": "A lightweight and speedy Markdown renderer for the console",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "node build.cjs"
+    "build": "node build.cjs",
+    "test": "jest ./__tests__"
   },
   "repository": {
     "type": "git",
