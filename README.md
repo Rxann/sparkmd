@@ -43,5 +43,4 @@ Links
 
 ## Contributing
 
-Fork the repository on GitHub and submit a pull request
-Make sure to run the tests before submitting a pull request
+Please fork the repository and submit a pull request.
