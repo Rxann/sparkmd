@@ -1,6 +1,6 @@
 # sparkmd
 
-A lightweight and speedy MD renderer for the console
+A lightweight and speedy Markdowns renderer for the console
 
 ## Installation
 
