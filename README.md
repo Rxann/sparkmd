@@ -1,3 +1,7 @@
+# Early Beta!
+
+Please open an issue if you encounter any bugs.
+
 # sparkmd
 
 A lightweight and speedy Markdowns renderer for the console
