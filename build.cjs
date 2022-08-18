@@ -7,9 +7,8 @@ const config = {
   sourcemap: true,
   platform: "node",
   minify: true,
-  format: "cjs",
   entryPoints: ["./index.ts"],
-  outfile: "./dist/cjs.js",
+  outfile: "./dist/index.js",
   plugins: [typecheckPlugin(), dtsPlugin()],
 };
 esbuild.build(config).catch((err) => {

@@ -13,7 +13,10 @@
   "keywords": [
     "md",
     "console",
-    "cli"
+    "cli",
+    "sparkmd",
+    "markdown",
+    "renderer"
   ],
   "author": "rxan",
   "license": "GPL-3.0-or-later",
@@ -37,7 +40,6 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/cjs.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
